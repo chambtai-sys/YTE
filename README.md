@@ -1,1 +1,272 @@
-PGRpdiBhbGlnbj0iY2VudGVyIj4KCmBgYAogX18gICBfX19fX19fIF9fX18KIFwgXCAvIC9fICAgX3wgX19ffAogIFwgViAvICB8IHwgfF9fXyBcCiAgIFxfLyAgIHxffCB8X19fXy8KYGBgCgojIFlURSDigJQgWW91VHViZSBUZXJtaW5hbCBFZGl0aW9uCgoqKldhdGNoLCBzZWFyY2gsIHN0cmVhbSwgYW5kIGRvd25sb2FkIFlvdVR1YmUg4oCUIGVudGlyZWx5IGZyb20geW91ciBMaW51eCB0ZXJtaW5hbC4qKgoKWyFbUHl0aG9uXShodHRwczovL2ltZy5zaGllbGRzLmlvL2JhZGdlL1B5dGhvbi0zLjEwJTJCLWJsdWU/bG9nbz1weXRob24mbG9nb0NvbG9yPXdoaXRlKV0oaHR0cHM6Ly9weXRob24ub3JnKQpbIVtMaWNlbnNlOiBNSVRdKGh0dHBzOi8vaW1nLnNoaWVsZHMuaW8vYmFkZ2UvTGljZW5zZS1NSVQtZ3JlZW4uc3ZnKV0oTElDRU5TRSkKWyFbUGxhdGZvcm1dKGh0dHBzOi8vaW1nLnNoaWVsZHMuaW8vYmFkZ2UvUGxhdGZvcm0tTGludXgtb3JhbmdlP2xvZ289bGludXgpXShodHRwczovL2dpdGh1Yi5jb20vY2hhbWJ0YWktc3lzL1lURSkKWyFbUG93ZXJlZCBieSB5dC1kbHBdKGh0dHBzOi8vaW1nLnNoaWVsZHMuaW8vYmFkZ2UvUG93ZXJlZCUyMGJ5LXl0LS1kbHAtcmVkKV0oaHR0cHM6Ly9naXRodWIuY29tL3l0LWRscC95dC1kbHApClshW1RVSTogUmljaF0oaHR0cHM6Ly9pbWcuc2hpZWxkcy5pby9iYWRnZS9UVUktUmljaC1ibHVldmlvbGV0KV0oaHR0cHM6Ly9naXRodWIuY29tL1RleHR1YWxpemUvcmljaCkKCjwvZGl2PgoKLS0tCgojIyDinKggRmVhdHVyZXMKCnwgRmVhdHVyZSB8IERlc2NyaXB0aW9uIHwKfC0tLXwtLS18Cnwg8J+UjSAqKlNlYXJjaCoqIHwgU2VhcmNoIFlvdVR1YmUgZnJvbSB5b3VyIHRlcm1pbmFsIGluc3RhbnRseSDigJQgbm8gQVBJIGtleSByZXF1aXJlZCB8Cnwg8J+UpSAqKlRyZW5kaW5nKiogfCBCcm93c2UgdHJlbmRpbmc6IE5vdywgTXVzaWMsIEdhbWluZywgRmlsbXMgfAp8IOKWtiAqKlN0cmVhbSoqIHwgUGxheSB2aWRlb3Mgb3IgYXVkaW8tb25seSB2aWEgYG1wdmAgKG9yIHlvdXIgcHJlZmVycmVkIHBsYXllcikgfAp8IOKshyAqKkRvd25sb2FkKiogfCBTYXZlIHZpZGVvcyBhcyBNUDQgb3IgYXVkaW8gYXMgTVAzL0FBQyB3aXRoIGZmbXBlZyB8Cnwg8J+TiyAqKlZpZGVvIEluZm8qKiB8IFZpZXcgdGl0bGUsIGNoYW5uZWwsIHZpZXdzLCBsaWtlcywgdXBsb2FkIGRhdGUsIGFuZCBkZXNjcmlwdGlvbiB8Cnwg8J+TnSAqKlF1ZXVlKiogfCBCdWlsZCBhIHBsYXlsaXN0IGFuZCBwbGF5IGl0IHNlcXVlbnRpYWxseSB8Cnwg4piFICoqQm9va21hcmtzKiogfCBTYXZlIHlvdXIgZmF2b3VyaXRlIHZpZGVvcyBsb2NhbGx5IGZvciBxdWljayBhY2Nlc3MgfAp8IPCflZMgKipIaXN0b3J5KiogfCBBdXRvLXRyYWNrcyBldmVyeXRoaW5nIHlvdSB3YXRjaCAobGFzdCAyMDAgZW50cmllcykgfAp8IOKamSAqKkNvbmZpZyoqIHwgSU5JLWJhc2VkIGNvbmZpZyDigJQgY2hhbmdlIHBsYXllciwgcXVhbGl0eSwgZG93bmxvYWQgcGF0aHMgfAp8IPCfk4QgKipQYWdpbmcqKiB8IE5hdmlnYXRlIHRocm91Z2ggbXVsdGktcGFnZSBzZWFyY2ggcmVzdWx0cyB8CgotLS0KCiMjIPCflqUgU2NyZWVuc2hvdAoKYGBgCuKVreKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKVrgrilIIgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIOKUggrilIIgICBfXyAgIF9fX19fX18gX19fXyAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIOKUggrilIIgICBcIFwgLyAvXyAgIF98IF9fX3wgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIOKUggrilIIgICAgXCBWIC8gIHwgfCB8X19fIFwgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIOKUggrilIIgICAgIFxfLyAgIHxffCB8X19fXy8gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIOKUggrilIIgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIOKUggrilIIgICAgICAgIFlvdVR1YmUgVGVybWluYWwgRWRpdGlvbiAgICAgICAgICAgICAgICAgICAgIOKUggrilIIgIHYxLjAuMCAg4oCiICBnaXRodWIuY29tL2NoYW1idGFpLXN5cy9ZVEUgICAgICAgICAgICAg4pSCCuKVsOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKVrwoK4oyoICBLZXliaW5kaW5ncwrila3ilIDilIDilIDilIDilIDilIDilKzilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDila4K4pSCIEtleSAg4pSCIEFjdGlvbiAgICAgICAgICAgICAgICAgIOKUggrilJzilIDilIDilIDilIDilIDilIDilLzilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilKQK4pSCIFtzXSAg4pSCIE5ldyBzZWFyY2ggICAgICAgICAgICAgIOKUggrilIIgW3RdICDilIIgQnJvd3NlIHRyZW5kaW5nICAgICAgICAg4pSCCuKUgiBbcF0gIOKUgiBQbGF5IHNlbGVjdGVkIHZpZGVvICAgICDilIIK4pSCIFthXSAg4pSCIFBsYXkgYXVkaW8gb25seSAgICAgICAgIOKUggrilIIgW2RdICDilIIgRG93bmxvYWQgdmlkZW8gICAgICAgICAg4pSCCuKUgiBbQV0gIOKUgiBEb3dubG9hZCBhdWRpbyAobXAzKSAgICDilIIK4pSCIFtpXSAg4pSCIFNob3cgdmlkZW8gaW5mbyAgICAgICAgIOKUggrilIIgW2JdICDilIIgVG9nZ2xlIGJvb2ttYXJrICAgICAgICAg4pSCCuKUgiBbcV0gIOKUgiBBZGQgdG8gcXVldWUgICAgICAgICAgICDilIIK4pSCIFtRXSAg4pSCIFBsYXkgcXVldWUgICAgICAgICAgICAgIOKUggrilIIgW25dICDilIIgTmV4dCBwYWdlICAgICAgICAgICAgICAg4pSCCuKUgiBbUF0gIOKUgiBQcmV2aW91cyBwYWdlICAgICAgICAgICDilIIK4pSCIFtoXSAg4pSCIFZpZXcgaGlzdG9yeSAgICAgICAgICAgIOKUggrilIIgW0JdICDilIIgVmlldyBib29rbWFya3MgICAgICAgICAg4pSCCuKUgiBbY10gIOKUgiBDbGVhciBzY3JlZW4gICAgICAgICAgICDilIIK4pSCIFt4XSAg4pSCIFF1aXQgWVRFICAgICAgICAgICAgICAgIOKUggrilbDilIDilIDilIDilIDilIDilIDilLTilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDila8KCvCfjqwgIFJlc3VsdHMgZm9yICJsb2ZpIGhpcCBob3AiICAocGFnZSAxLzMpCuKVreKUgOKUgOKUgOKUrOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUrOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUrOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUrOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKVrgrilIIgIyDilIIgVGl0bGUgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIOKUgiBDaGFubmVsICAgICAgICAgICAgICDilIIgRHVyYXRpb24g4pSCICAgIFZpZXdzIOKUggrilJzilIDilIDilIDilLzilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilLzilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilLzilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilLzilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilKQK4pSCIDEg4pSCIGxvZmkgaGlwIGhvcCByYWRpbyDwn5OaIGJlYXRzIHRvIHJlbGF4IOKUgiBMb2ZpIEdpcmwgICAgICAgICAgICDilIIgIExJVkUgICAg4pSCICAgMS4yQiAgIOKUggrilIIgMiDilIIgTG9maSBIaXAgSG9wIE1peCAtIEJlYXRzIHRvIFN0dWR5ICAgIOKUgiBDaGlsbGVkQ293ICAgICAgICAgICDilIIgMTowMjozNCAg4pSCIDM0NS4yTSAgIOKUggrilbDilIDilIDilIDilLTilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilLTilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilLTilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilLTilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDila8KYGBgCgotLS0KCiMjIPCfk6YgSW5zdGFsbGF0aW9uCgojIyMgUHJlcmVxdWlzaXRlcwoKYGBgYmFzaAojIERlYmlhbiAvIFVidW50dQpzdWRvIGFwdCBpbnN0YWxsIG1wdiBmZm1wZWcgcHl0aG9uMyBweXRob24zLXBpcCBnaXQKCiMgQXJjaCAvIE1hbmphcm8Kc3VkbyBwYWNtYW4gLVMgbXB2IGZmbXBlZyBweXRob24gcHl0aG9uLXBpcCBnaXQKCiMgRmVkb3JhCnN1ZG8gZG5mIGluc3RhbGwgbXB2IGZmbXBlZyBweXRob24zIHB5dGhvbjMtcGlwIGdpdApgYGAKCiMjIyBJbnN0YWxsIFlURQoKYGBgYmFzaAojIDEuIENsb25lIHRoZSByZXBvCmdpdCBjbG9uZSBodHRwczovL2dpdGh1Yi5jb20vY2hhbWJ0YWktc3lzL1lURS5naXQKY2QgWVRFCgojIDIuIEluc3RhbGwgUHl0aG9uIGRlcGVuZGVuY2llcwpwaXAgaW5zdGFsbCAtciByZXF1aXJlbWVudHMudHh0CgojIDMuIFJ1biBZVEUKcHl0aG9uMyB5dGUucHkKYGBgCgojIyMgT3B0aW9uYWw6IEluc3RhbGwgYXMgYSBzeXN0ZW0gY29tbWFuZAoKYGBgYmFzaAojIFN5bWxpbmsgZm9yIHN5c3RlbS13aWRlIHVzZQpzdWRvIGxuIC1zICIkKHB3ZCkveXRlLnB5IiAvdXNyL2xvY2FsL2Jpbi95dGUKY2htb2QgK3ggeXRlLnB5CgojIE5vdyBqdXN0IHR5cGU6Cnl0ZQpgYGAKCk9yIHdpdGggcGlwIChlZGl0YWJsZSBpbnN0YWxsKToKCmBgYGJhc2gKcGlwIGluc3RhbGwgLWUgLgp5dGUKYGBgCgotLS0KCiMjIPCfmoAgVXNhZ2UKCiMjIyBJbnRlcmFjdGl2ZSBUVUkgKHJlY29tbWVuZGVkKQoKYGBgYmFzaAp5dGUKYGBgCgpMYXVuY2ggdGhlIGZ1bGwgaW50ZXJhY3RpdmUgVFVJLiBQcmVzcyBgP2AgYXQgYW55IHRpbWUgZm9yIGtleWJpbmRpbmdzLgoKIyMjIENMSSBDb21tYW5kcwoKYGBgYmFzaAojIFNlYXJjaCBZb3VUdWJlCnl0ZSBzZWFyY2ggImxvZmkgaGlwIGhvcCIKeXRlIHNlYXJjaCAicmljayBhc3RsZXkiIC1uIDIwICAgICAjIHNob3cgMjAgcmVzdWx0cwoKIyBQbGF5IGEgVVJMIGRpcmVjdGx5Cnl0ZSBwbGF5IGh0dHBzOi8vd3d3LnlvdXR1YmUuY29tL3dhdGNoP3Y9ZFF3NHc5V2dYY1EKCiMgQXVkaW8gb25seQp5dGUgcGxheSBodHRwczovL3d3dy55b3V0dWJlLmNvbS93YXRjaD92PWRRdzR3OVdnWGNRIC0tYXVkaW8tb25seQoKIyBEb3dubG9hZCB2aWRlbyAoTVA0KQp5dGUgZG93bmxvYWQgaHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1kUXc0dzlXZ1hjUQoKIyBEb3dubG9hZCBhdWRpbyAoTVAzKQp5dGUgZG93bmxvYWQgaHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1kUXc0dzlXZ1hjUSAtLWF1ZGlvLW9ubHkKCiMgU2hvdyB0cmVuZGluZwp5dGUgdHJlbmRpbmcKCiMgVmlldyB3YXRjaCBoaXN0b3J5Cnl0ZSBoaXN0b3J5CgojIEVkaXQgY29uZmlnCnl0ZSBjb25maWcKYGBgCgotLS0KCiMjIOKamSBDb25maWd1cmF0aW9uCgpZVEUgc3RvcmVzIGl0cyBjb25maWcgYXQgYH4vLmNvbmZpZy95dGUvY29uZmlnLmluaWAuIEVkaXQgaXQgd2l0aCBgeXRlIGNvbmZpZ2Agb3IgeW91ciBmYXZvdXJpdGUgdGV4dCBlZGl0b3IuCgpgYGBpbmkKW3BsYXllcl0KdmlkZW9fcGxheWVyICAgICAgPSBtcHYKYXVkaW9fb25seV9wbGF5ZXIgPSBtcHYgLS1uby12aWRlbwpkZWZhdWx0X3F1YWxpdHkgICA9IGJlc3QKCltkb3dubG9hZF0Kb3V0cHV0X2RpciAgID0gfi9Eb3dubG9hZHMvWVRFCmZvcm1hdCAgICAgICA9IGJlc3R2aWRlbytiZXN0YXVkaW8vYmVzdAphdWRpb19mb3JtYXQgPSBtcDMKClt1aV0KcmVzdWx0c19wZXJfcGFnZSA9IDEwCmNvbG9yX3NjaGVtZSAgICAgPSBkZWZhdWx0CnNob3dfdGh1bWJuYWlscyAgPSBmYWxzZQpgYGAKCiMjIyBTdXBwb3J0ZWQgdmlkZW8gcGxheWVycwoKQW55IHBsYXllciB3aXRoIHl0LWRscC95b3V0dWJlLWRsIHN1cHBvcnQgd29ya3M6Cgp8IFBsYXllciB8IEluc3RhbGwgfCBDb25maWcgdmFsdWUgfAp8LS0tLS0tLS18LS0tLS0tLS0tfC0tLS0tLS0tLS0tLS0tfAp8ICoqbXB2KiogKHJlY29tbWVuZGVkKSB8IGBzdWRvIGFwdCBpbnN0YWxsIG1wdmAgfCBgbXB2YCB8CnwgdmxjIHwgYHN1ZG8gYXB0IGluc3RhbGwgdmxjYCB8IGB2bGNgIHwKfCBtcGxheWVyIHwgYHN1ZG8gYXB0IGluc3RhbGwgbXBsYXllcmAgfCBgbXBsYXllcmAgfAp8IGNlbGx1bG9pZCB8IGBzdWRvIGFwdCBpbnN0YWxsIGNlbGx1bG9pZGAgfCBgY2VsbHVsb2lkYCB8CgotLS0KCiMjIPCfk4EgRGF0YSAmIEZpbGVzCgp8IFBhdGggfCBDb250ZW50cyB8CnwtLS0tLS18LS0tLS0tLS0tLXwKfCBgfi8uY29uZmlnL3l0ZS9jb25maWcuaW5pYCB8IFVzZXIgc2V0dGluZ3MgfAp8IGB+Ly5jb25maWcveXRlL2hpc3RvcnkuanNvbmAgfCBXYXRjaCBoaXN0b3J5IChsYXN0IDIwMCBlbnRyaWVzKSB8CnwgYH4vLmNvbmZpZy95dGUvYm9va21hcmtzLmpzb25gIHwgU2F2ZWQgYm9va21hcmtzIHwKfCBgfi9Eb3dubG9hZHMvWVRFL2AgfCBEb3dubG9hZGVkIGZpbGVzIChkZWZhdWx0KSB8CgotLS0KCiMjIPCfm6AgUmVxdWlyZW1lbnRzCgotICoqUHl0aG9uKiogMy4xMCsKLSAqKm1wdioqIChvciBhbnkgeXQtZGxwLWNvbXBhdGlibGUgcGxheWVyKQotICoqZmZtcGVnKiogKGZvciBkb3dubG9hZHMgJiBhdWRpbyBleHRyYWN0aW9uKQoKUHl0aG9uIHBhY2thZ2VzIChgcmVxdWlyZW1lbnRzLnR4dGApOgoKYGBgCnl0LWRscD49MjAyNC4xLjEKcmljaD49MTMuNy4wCnJlYWRjaGFyPj00LjAuNQpgYGAKCi0tLQoKIyMg8J+XuiBSb2FkbWFwCgotIFsgXSBDaGFubmVsIGJyb3dzaW5nICYgc3Vic2NyaXB0aW9ucwotIFsgXSBTdWJ0aXRsZSBkaXNwbGF5IGluIHRlcm1pbmFsCi0gWyBdIFRodW1ibmFpbCBhcnQgKGtpdHR5IC8gc2l4ZWwgdGVybWluYWxzKQotIFsgXSBQbGF5bGlzdCBpbXBvcnQvZXhwb3J0IChNM1UsIEpTT04pCi0gWyBdIFdhdGNoIGxhdGVyIHN5bmMgYWNyb3NzIGRldmljZXMKLSBbIF0gUGx1Z2luIHN5c3RlbSBmb3IgY3VzdG9tIHNvdXJjZXMKCi0tLQoKIyMg8J+knSBDb250cmlidXRpbmcKClB1bGwgcmVxdWVzdHMgYXJlIHdlbGNvbWUhCgoxLiBGb3JrIHRoZSByZXBvCjIuIENyZWF0ZSBhIGZlYXR1cmUgYnJhbmNoOiBgZ2l0IGNoZWNrb3V0IC1iIGZlYXR1cmUvbXktZmVhdHVyZWAKMy4gQ29tbWl0IHlvdXIgY2hhbmdlczogYGdpdCBjb21taXQgLW0gImZlYXQ6IGFkZCBteSBmZWF0dXJlImAKNC4gUHVzaCB0aGUgYnJhbmNoOiBgZ2l0IHB1c2ggb3JpZ2luIGZlYXR1cmUvbXktZmVhdHVyZWAKNS4gT3BlbiBhIFB1bGwgUmVxdWVzdAoKLS0tCgojIyDwn5OdIExpY2Vuc2UKClRoaXMgcHJvamVjdCBpcyBsaWNlbnNlZCB1bmRlciB0aGUgKipNSVQgTGljZW5zZSoqIOKAlCBzZWUgW0xJQ0VOU0VdKExJQ0VOU0UpIGZvciBkZXRhaWxzLgoKLS0tCgojIyDimqAgRGlzY2xhaW1lcgoKWVRFIGlzIGFuIG9wZW4tc291cmNlIHRvb2wgZm9yIHBlcnNvbmFsIHVzZS4gSXQgZG9lcyBub3QgaG9zdCwgY2FjaGUsIG9yIHJlZGlzdHJpYnV0ZSBhbnkgWW91VHViZSBjb250ZW50LgpBbGwgbWVkaWEgaXMgc3RyZWFtZWQgb3IgZG93bmxvYWRlZCBkaXJlY3RseSBmcm9tIFlvdVR1YmUgdmlhIHl0LWRscC4gVXNlIHJlc3BvbnNpYmx5IGFuZCBpbiBhY2NvcmRhbmNlIHdpdGgKW1lvdVR1YmUncyBUZXJtcyBvZiBTZXJ2aWNlXShodHRwczovL3d3dy55b3V0dWJlLmNvbS90L3Rlcm1zKS4KCi0tLQoKPGRpdiBhbGlnbj0iY2VudGVyIj4KTWFkZSB3aXRoIOKdpO+4jyBhbmQgYSBMaW51eCB0ZXJtaW5hbAo8YnI+PGJyPgo8YSBocmVmPSJodHRwczovL2dpdGh1Yi5jb20vY2hhbWJ0YWktc3lzL1lURS9zdGFyZ2F6ZXJzIj7irZAgU3RhciB0aGlzIHJlcG8gaWYgeW91IGxpa2UgaXQhPC9hPgo8L2Rpdj4K
+<div align="center">
+
+```
+ __   _______ ____
+ \ \ / /_   _| ___|
+  \ V /  | | |___ \
+   \_/   |_| |____/
+```
+
+# YTE — YouTube Terminal Edition
+
+**Watch, search, stream, and download YouTube — entirely from your Linux terminal.**
+
+[![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python&logoColor=white)](https://python.org)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Platform](https://img.shields.io/badge/Platform-Linux-orange?logo=linux)](https://github.com/chambtai-sys/YTE)
+[![Powered by yt-dlp](https://img.shields.io/badge/Powered%20by-yt--dlp-red)](https://github.com/yt-dlp/yt-dlp)
+[![TUI: Rich](https://img.shields.io/badge/TUI-Rich-blueviolet)](https://github.com/Textualize/rich)
+
+</div>
+
+---
+
+## ✨ Features
+
+| Feature | Description |
+|---|---|
+| 🔍 **Search** | Search YouTube from your terminal instantly — no API key required |
+| 🔥 **Trending** | Browse trending: Now, Music, Gaming, Films |
+| ▶ **Stream** | Play videos or audio-only via `mpv` (or your preferred player) |
+| ⬇ **Download** | Save videos as MP4 or audio as MP3/AAC with ffmpeg |
+| 📋 **Video Info** | View title, channel, views, likes, upload date, and description |
+| 📝 **Queue** | Build a playlist and play it sequentially |
+| ★ **Bookmarks** | Save your favourite videos locally for quick access |
+| 🕓 **History** | Auto-tracks everything you watch (last 200 entries) |
+| ⚙ **Config** | INI-based config — change player, quality, download paths |
+| 📄 **Paging** | Navigate through multi-page search results |
+
+---
+
+## 🖥 Preview
+
+```
+╭─────────────────────────────────────────────────────╮
+│   __   _______ ____                                 │
+│   \ \ / /_   _| ___|                               │
+│    \ V /  | | |___ \                               │
+│     \_/   |_| |____/                                │
+│         YouTube Terminal Edition                    │
+│   v1.0.0  •  github.com/chambtai-sys/YTE            │
+╰─────────────────────────────────────────────────────╯
+
+⌨  Keybindings
+╭──────┬──────────────────────────╮
+│ Key  │ Action                   │
+├──────┼──────────────────────────┤
+│ [s]  │ New search               │
+│ [t]  │ Browse trending          │
+│ [p]  │ Play selected video      │
+│ [a]  │ Play audio only          │
+│ [d]  │ Download video           │
+│ [A]  │ Download audio (mp3)     │
+│ [i]  │ Show video info          │
+│ [b]  │ Toggle bookmark          │
+│ [q]  │ Add to queue             │
+│ [Q]  │ Play queue               │
+│ [n]  │ Next page                │
+│ [P]  │ Previous page            │
+│ [h]  │ View history             │
+│ [B]  │ View bookmarks           │
+│ [c]  │ Clear screen             │
+│ [x]  │ Quit YTE                 │
+╰──────┴──────────────────────────╯
+
+🎬  Results for "lofi hip hop"  (page 1/3)
+╭───┬────────────────────────────────────┬──────────────┬──────────┬─────────╮
+│ # │ Title                              │ Channel      │ Duration │  Views  │
+├───┼────────────────────────────────────┼──────────────┼──────────┼─────────┤
+│ 1 │ lofi hip hop radio 📚 beats to...  │ Lofi Girl    │ LIVE     │  1.2B   │
+│ 2 │ Lofi Hip Hop Mix - Beats to Study  │ ChilledCow   │ 1:02:34  │ 345.2M  │
+╰───┴────────────────────────────────────┴──────────────┴──────────┴─────────╯
+```
+
+---
+
+## 📦 Installation
+
+### Prerequisites
+
+```bash
+# Debian / Ubuntu
+sudo apt install mpv ffmpeg python3 python3-pip git
+
+# Arch / Manjaro
+sudo pacman -S mpv ffmpeg python python-pip git
+
+# Fedora
+sudo dnf install mpv ffmpeg python3 python3-pip git
+```
+
+### Install YTE
+
+```bash
+# 1. Clone the repo
+git clone https://github.com/chambtai-sys/YTE.git
+cd YTE
+
+# 2. Install Python dependencies
+pip install -r requirements.txt
+
+# 3. Run it
+python3 yte.py
+```
+
+### Optional: Install as a system command
+
+```bash
+# Symlink for global use
+sudo ln -s "$(pwd)/yte.py" /usr/local/bin/yte
+chmod +x yte.py
+
+# Then just type:
+yte
+```
+
+Or via pip editable install:
+
+```bash
+pip install -e .
+yte
+```
+
+---
+
+## 🚀 Usage
+
+### Interactive TUI (recommended)
+
+```bash
+yte
+```
+
+Launches the full interactive TUI. Press `?` at any time to see keybindings.
+
+### CLI Subcommands
+
+```bash
+# Search YouTube
+yte search "lofi hip hop"
+yte search "rick astley" -n 20       # 20 results
+
+# Play a video URL directly
+yte play https://www.youtube.com/watch?v=dQw4w9WgXcQ
+yte play https://www.youtube.com/watch?v=dQw4w9WgXcQ --audio-only
+
+# Download
+yte download https://www.youtube.com/watch?v=dQw4w9WgXcQ           # MP4
+yte download https://www.youtube.com/watch?v=dQw4w9WgXcQ --audio-only  # MP3
+
+# Browse trending
+yte trending
+
+# View history
+yte history
+
+# Open config in editor
+yte config
+```
+
+---
+
+## ⚙ Configuration
+
+Config is stored at `~/.config/yte/config.ini` and auto-created on first run.
+
+```ini
+[player]
+video_player      = mpv
+audio_only_player = mpv --no-video
+default_quality   = best
+
+[download]
+output_dir   = ~/Downloads/YTE
+format       = bestvideo+bestaudio/best
+audio_format = mp3
+
+[ui]
+results_per_page = 10
+color_scheme     = default
+show_thumbnails  = false
+```
+
+### Supported Players
+
+| Player | Install | Config value |
+|--------|---------|---------------|
+| **mpv** *(recommended)* | `sudo apt install mpv` | `mpv` |
+| vlc | `sudo apt install vlc` | `vlc` |
+| mplayer | `sudo apt install mplayer` | `mplayer` |
+| celluloid | `sudo apt install celluloid` | `celluloid` |
+
+---
+
+## 📁 Data & Files
+
+| Path | Contents |
+|------|----------|
+| `~/.config/yte/config.ini` | User settings |
+| `~/.config/yte/history.json` | Watch history (last 200 entries) |
+| `~/.config/yte/bookmarks.json` | Saved bookmarks |
+| `~/Downloads/YTE/` | Downloaded files (default output) |
+
+---
+
+## 🛠 Requirements
+
+- **Python** 3.10+
+- **mpv** (or any yt-dlp-compatible player)
+- **ffmpeg** (for downloads & audio extraction)
+
+Python packages (`requirements.txt`):
+
+```
+yt-dlp>=2024.1.1
+rich>=13.7.0
+readchar>=4.0.5
+```
+
+---
+
+## 🗺 Roadmap
+
+- [ ] Channel browsing & subscriptions
+- [ ] Subtitle display in terminal
+- [ ] Thumbnail art (kitty / sixel terminals)
+- [ ] Playlist import/export (M3U, JSON)
+- [ ] Watch later sync
+- [ ] Plugin system for custom sources
+
+---
+
+## 🤝 Contributing
+
+Pull requests are welcome!
+
+1. Fork the repo
+2. Create a feature branch: `git checkout -b feature/my-feature`
+3. Commit your changes: `git commit -m "feat: add my feature"`
+4. Push the branch: `git push origin feature/my-feature`
+5. Open a Pull Request
+
+---
+
+## 📝 License
+
+This project is licensed under the **MIT License** — see [LICENSE](LICENSE) for details.
+
+---
+
+## ⚠ Disclaimer
+
+YTE is an open-source tool for personal use. It does not host, cache, or redistribute any YouTube content.
+All media is streamed or downloaded directly from YouTube via yt-dlp. Use responsibly and in accordance with
+[YouTubes Terms of Service](https://www.youtube.com/t/terms).
+
+---
+
+<div align="center">
+Made with ❤️ and a Linux terminal
+<br><br>
+⭐ Star this repo if you find it useful!
+</div>
